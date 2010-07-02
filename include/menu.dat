@@ -1,0 +1,18 @@
+<?php
+function getMenu($cur_url){
+    if($cur_url == null)
+        $cur_url = $_SERVER['REQUEST_URI'];
+?>
+    <div id="menu">        
+        <ul class="menu">
+            <li><a <?php if($cur_url == "/" || !$cur_url){ echo 'class="select"';} ?> href="./">Главная</a></li>
+            <li><a <?php if($cur_url == "/km.php"){ echo 'class="select"';} ?> href="./km.php">Покатушки</a></li>
+            <li><a <?php if($cur_url == "/roads.php"){ echo 'class="select"';} ?> href="./roads.php">Маршруты</a></li>
+            <li><a <?php if($cur_url == "/video.php"){ echo 'class="select"';} ?> href="./video.php">Видеоотечты</a></li>
+            <li><a <?php if($cur_url == "/pravila.php"){ echo 'class="select"';} ?> href="./pravila.php">Правила (ПДД)</a></li>            
+            <li><a <?php if($cur_url == "/contact.php"){ echo 'class="select"';} ?> href="./contact.php">Контакты</a></li>
+        </ul>
+    </div>
+<?php
+}
+?>

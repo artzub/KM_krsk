@@ -42,7 +42,7 @@ AddType application/x-xpinstall .xpi
 DirectoryIndex index.php
 
 ##Включение нужной кодировки
-AddDefaultCharset windows-1251
+AddDefaultCharset utf-8
 
 ##Запрет листинга дирректории
 Options -Indexes

@@ -1,12 +1,19 @@
 <?php
-include ('./includ/head.dat');
-echo '
-<div class="title">Маршрут №1</div>
-<div class="menu">
-&nbsp;<img src="./roads/road_01.jpg" title="Маршрут №1: БКЗ-Мира-МузКомедия-Мира-БКЗ" alt="Маршрут №1"/>&nbsp;<br />
-<b>БКЗ-Мира-МузКомедия-Мира-БКЗ</b><br />
-<br />
-</div>
-';
-include ('./includ/foot.dat');
+include ('./include/header.dat');
+include ('./include/menu.dat');
+GetMenu("/roads.php");
+?>
+    <div id="content">
+        <div class="blockdata">
+            <div class="titlecontainer">        
+                <div class="title">РњР°СЂС€СЂСѓС‚ в„–1</div>
+            </div>
+            <div class="data">
+                <img src="./roads/road_01.jpg" title="РњР°СЂС€СЂСѓС‚ в„–1: Р‘РљР—-РњРёСЂР°-РњСѓР·РљРѕРјРµРґРёСЏ-РњРёСЂР°-Р‘РљР—" alt="РњР°СЂС€СЂСѓС‚ в„–1"/><br />
+                <b>Р‘РљР—-РњРёСЂР°-РњСѓР·РљРѕРјРµРґРёСЏ-РњРёСЂР°-Р‘РљР—</b><br />        
+            </div>
+        </div>
+        <a class="goback" href="<?php echo $_SERVER['HTTP_REFERER']?>" title="РќР°Р·Р°Рґ">в—Ђ РќР°Р·Р°Рґ</a>
+<?php
+include ('./include/footer.dat');
 ?>

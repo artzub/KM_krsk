@@ -1,15 +1,21 @@
 <?php
-include ('./includ/head.dat');
-
-echo '<div class="title">ОШИБКА</div>';
-echo '<div class="menu">';
-echo '
-<br /><b>ВНИМАНИЕ, ОШИБКА!</b>
-<br />
-<br />Если вы видите эту страницу, то это значит что вы наткнулись на "битую" ссылку, либо обратились к файлу, доступ к которому запрещен администратором сайта.
-<br />
-<br />Вернитесь на <b><a class="m" href="./index.php">главную страницу</a></b>
-</div>
-';
-include ('./includ/foot.dat');
+include ('./include/header.dat');
+include ('./include/menu.dat');
+GetMenu();
+?>
+    <div id="content">
+        <div class="blockdata">
+            <div class="titlecontainer">        
+                <div class="title">РћРЁРР‘РљРђ</div>
+            </div>
+            <div class="data">
+                <br /><b>Р’РќРРњРђРќРР•, РћРЁРР‘РљРђ!</b>
+                <br />
+                <br />Р•СЃР»Рё РІС‹ РІРёРґРёС‚Рµ СЌС‚Сѓ СЃС‚СЂР°РЅРёС†Сѓ, С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚ С‡С‚Рѕ РІС‹ РЅР°С‚РєРЅСѓР»РёСЃСЊ РЅР° "Р±РёС‚СѓСЋ" СЃСЃС‹Р»РєСѓ, Р»РёР±Рѕ РѕР±СЂР°С‚РёР»РёСЃСЊ Рє С„Р°Р№Р»Сѓ, РґРѕСЃС‚СѓРї Рє РєРѕС‚РѕСЂРѕРјСѓ Р·Р°РїСЂРµС‰РµРЅ Р°РґРјРёРЅРёСЃС‚СЂР°С‚РѕСЂРѕРј СЃР°Р№С‚Р°.
+                <br />
+                <br /><a class="goback" href="<?php echo $_SERVER['HTTP_REFERER']?>" title="РќР°Р·Р°Рґ">в—Ђ Р’РµСЂРЅРёС‚РµСЃСЊ РЅР°Р·Р°Рґ</a>
+            </div>
+        </div>        
+<?php
+include ('./include/footer.dat');
 ?>

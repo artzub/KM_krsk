@@ -1,76 +1,171 @@
 body {
     max-width: 700px; 
     margin: 1px auto; 
-    font-family:Tahoma; 
+    font-family: tahoma, verdana, arial, sans-serif, Lucida Sans;
     font-size:13px; 
     background-color: white;
+}
+div{
+    display: block;
 }
 font,th,div,p {
     font-family: sans-serif; 
     color: #494949; 
     font-size: 11px;
 }
-a:link, a:active, a:visited {
-    color: #666668; 
-    text-decoration: none;
-}
-a:hover {
-    color: #FFFFFF; 
-    text-decoration: none;
-}
-.dance {
-    background-image:url('/img/background.gif');
-}
-.title {
-    border: 1px solid #3B6798;
-    padding: 3px;     
-    display: inline; 
-    margin: 0; 
-    margin-left: 3px;
-    background-color: #6D8FB3; 
-    color: #FFFFFF;
-}
-.menu {
-    border: 1px solid #3B6798; 
-    padding: 3px; 
-    margin: 3px 3px 0 3px;
-    background-color: #F8F8F8;
-}
-a.m:link, a.l:active, a.l:visited 
-{
-    padding: 0; 
-    text-decoration: none;
-}
-a.m:hover {
-    background:#336699; 
-    color: white; 
-    text-decoration: none;
-}
-a.l:link, a.l:active, a.l:visited {
-    display: block; 
-    padding: 0; 
-    text-decoration: none;
-}
-a.l:hover {
-    background: #336699; 
-    color: white; 
-    text-decoration: none;
-}
-.a1 {
-    border: 1px dotted white; 
-    padding-bottom: 4px;
-}
-.a1:hover {
-    color: #FFFFFF; 
-    text-decoration: none; 
-    border: 1px solid #FFFFFF; 
-    background-color: #336699;
-}
-.foot {
-    border-top: 3px double white; 
-    padding: 3px; 
-    background:#6D8FB3;
-}
+
 img{
     border:0
+}
+
+/**
+* header
+*/
+#header {
+    background: #4b769f; /*#6D8FB3;*/
+    border-bottom:3px double white;    
+}
+
+/**
+* footer
+*/
+#footer {
+    border-top: 3px double white; 
+    padding: 3px; 
+    background:#4b769f;
+}
+
+/**
+* setting menu
+*/
+#menu {
+    border: 1px solid #3B6798; 
+    background-color: #F8F8F8;
+}
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+}
+
+.menu li.caption {
+    font-family: Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    background-color: #6d8fb3/*acc7f2*/;
+    color: #fff/*45688E*/;
+    padding: 2px 2px 2px 2px;
+    padding-left: 5px;
+}
+
+.menu li{
+    float: left;
+}
+
+.menu li a{
+    color: #2B587A;
+    border: 2px solid #F8F8F8;
+    text-decoration: none;
+    display: block;
+    padding: 0px 2px;
+    overflow: hidden;
+}
+
+.menu li a.select {    
+    background: #e9eff4;    
+    border-color: #e9eff4;    
+}
+
+.menu li a:hover {
+    background: #dae1e8; 
+    border-color: #dae1e8;    
+}
+
+.menu li a:active {
+    color: #F8F8F8;
+    border-top-color: #acb2b7;
+    border-left-color: #acb2b7;
+    border-right-color: #edf4fc;    
+    border-bottom-color: #edf4fc;
+    text-shadow: 0 0 2px #2B587A, 0 0 2px #2B587A, 0 0 2px #2B587A;
+}
+
+#RedzTitle {
+    display: none;
+}
+
+/**
+* content 
+*/
+#content {
+    padding: 0 3px;
+    position: relative;
+    overflow: hidden;
+    border: 1px dotted #b1c5dc;
+    margin: 0 6px;
+/*    border-top-color: #b1c5dc;*/
+}
+
+.blockdata {
+    padding: 0 3px;
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.blockdata .titlecontainer {
+    padding-top: 3px;   
+}
+.titlecontainer .title {
+    border: 1px solid #3B6798;
+    padding: 3px;   
+    display: inline;
+    background-color: #4b769f; 
+    color: #FFFFFF;
+}
+
+.blockdata .data {
+    border: 1px solid #3B6798; 
+    padding: 3px; 
+    margin-top: 3px;
+    background-color: #F8F8F8;
+}
+
+a.m, a.bf  {
+    font-weight: bold;
+    text-decoration: none;
+    color: #73d0ff/*73d0ff*/; 
+    border-bottom: 1px dotted #73d0ff;    
+}
+
+a.m:hover {
+    color: #0079ff;
+    border-bottom: 1px solid #0079ff;
+}
+
+a.bf  {    
+    color: #a6d9f2;
+    border-bottom: 1px dotted #a6d9f2;
+}
+
+a.bf:hover {
+    color: #c7e6f4;
+    border-bottom: 1px solid #c7e6f4;
+}
+
+a.goback {
+    font-family: 'Courier New';
+    font-size: 13px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 3px;
+    color: #4b769f;
+    border: 1px solid #4b769f;
+    background: #ffffff;
+}
+
+a.goback:hover {
+    background: #4b769f;
+    color: #ffffff;
+    border-color: #ffffff;
 }

@@ -1,19 +1,24 @@
 <?php
-//Ссылка выглядит как: https://server.waphost.net/go.php?outsite=virt.omsknet.net
-include ('./includ/head.dat');
-if($_GET['outsite']==""){$_GET['outsite']='wap-motor.ru';}
-echo '
-<div class="title">Редирект....</div>
-<div class="menu">
-';
-echo 'Вы собираетесь покинуть сайт <b>km.xclan.ru</b> и перейти по адресу <b>http://'.$_GET["outsite"].'</b>.
-<br />
-<br /><b>Вы подтверждаете переход по внешней ссылке?</b>';
-echo '<br />---';
-echo '<br />&nbsp;<a class="m" href="http://'.$_GET["outsite"].'">Да, перейти по указанному адресу</a>&nbsp;';
-echo '<br />или'; 
-echo '<br />&nbsp;<a class="m" href="../index.php">На главную</a>';
-echo '</div>';
-
-include ('./includ/foot.dat');
+include ('./include/header.dat');
+include ('./include/menu.dat');
+GetMenu();
+if($_GET['outsite']==""){$_GET['outsite']=$_SERVER['HTTP_HOST'];}
+?> 
+    <div id="content">    
+        
+        <div class="blockdata">
+            <div class="titlecontainer">
+                <div class="title">Р РµРґРёСЂРµРєС‚....</div>
+            </div>
+            <div class="data">
+                Р’С‹ СЃРѕР±РёСЂР°РµС‚РµСЃСЊ РїРѕРєРёРЅСѓС‚СЊ СЃР°Р№С‚ <b><?php echo $_SERVER['HTTP_HOST']?></b> Рё РїРµСЂРµР№С‚Рё РїРѕ Р°РґСЂРµСЃСѓ <b>http://<?php echo $_GET["outsite"]?></b>.
+                <br />
+                <br /><b>Р’С‹ РїРѕРґС‚РІРµСЂР¶РґР°РµС‚Рµ РїРµСЂРµС…РѕРґ РїРѕ РІРЅРµС€РЅРµР№ СЃСЃС‹Р»РєРµ?</b>
+                <br /><a class="m" href="http://<?php echo $_GET["outsite"] ?>">Р”Р°, РїРµСЂРµР№С‚Рё РїРѕ СѓРєР°Р·Р°РЅРЅРѕРјСѓ Р°РґСЂРµСЃСѓ</a>&nbsp;
+                <br />РёР»Рё 
+                <br /><a class="goback" href="<?php echo $_SERVER['HTTP_REFERER']?>">в—Ђ Р’РµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ</a>
+            </div>
+        </div>
+<?php
+include ('./include/footer.dat');
 ?>
