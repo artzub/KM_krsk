@@ -12,7 +12,7 @@
             </div>
         </div>
         <div id="footer">
-            <span style="color:#FFFFFF">Copyright &#169; 2010 <a class="bf" href="http://www.omsknet.info/">Омскнэт</a>&nbsp;</span>
+            <span style="color:#FFFFFF">Copyright &#169; 2010 <a href="http://artzub.vkontakte.ru" class="goback" style="padding:2px;" title="Artem Zubkov">ArtZub</a> & <a href="http://www.omsknet.info/" class="goback" style="padding:2px;">Омскнэт</a></span>
         </div>
     </body>
 </html>

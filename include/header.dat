@@ -7,13 +7,13 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ru">
 <head>
-    <meta http-equiv="content-Type" content="text/html; charset=windows-1251" />
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Pragma" content="no-cache" /> 
     <title>Критическая Масса (г.Красноярск)</title>
     <meta name="Keywords" content="критическая масса, велосипед, акция, участники движения, пдд, правила дорожного движения, красноярск" />
     <meta name="Description" content="Критическая Масса: Мы не блокируем дорожное движение — мы являемся частью движения!" />
     <meta name="Robots" content="index, follow" />
-    <meta name="Autor" content="Романов Роман Алексеевич" />
+    <meta name="Autor" content="ArtZub (Artem Zubkov artzub@gmail.com) и Романов Роман Алексеевич" />
     <link rel="canonical" href="http://km.xclan.ru/index.php" />
     <link href="./css/style_artzub.css" type="text/css" rel="stylesheet" />
 </head>
@@ -30,7 +30,7 @@ echo '<?xml version="1.0" encoding="utf-8"?>';
         setTimeout(function(){
             var divcur = document.getElementById("RedzText");
             if(divcur!=null)
-                divcur.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.removeChild(divcur.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);}, 300)
+                divcur.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.removeChild(divcur.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode.parentNode);}, 200)
         //-->
     </script>    
     <div id="header">

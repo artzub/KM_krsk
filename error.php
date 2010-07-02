@@ -13,9 +13,9 @@ GetMenu();
                 <br />
                 <br />Если вы видите эту страницу, то это значит что вы наткнулись на "битую" ссылку, либо обратились к файлу, доступ к которому запрещен администратором сайта.
                 <br />
-                <br /><a class="goback" href="<?php echo $_SERVER['HTTP_REFERER']?>" title="Назад">◀ Вернитесь назад</a>
             </div>
         </div>        
+        <a class="goback" href="./" title="Назад">◀ Перейти на главную</a>
 <?php
 include ('./include/footer.dat');
 ?>
