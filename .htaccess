@@ -1,0 +1,85 @@
+##Mime-типы файлов для правильной отдачи в браузер
+AddType application/x-httpd-php .php
+AddType text/vnd.wap.wml;charset=UTF-8 .wml
+AddType application/vnd.wap.wmlc .wmlc
+AddType text/vnd.wap.wmlscript .wmls
+AddType application/vnd.wap.wmlscriptc .wmlsc
+AddType application/xhtml+xml;charset=UTF-8 .xhtml
+AddType text/x-vcard .vcf
+AddType text/x-vcalendar .vcs
+AddType text/calendar .ics
+AddType text/vnd.sun.j2me.app-descriptor .jad
+AddType application/java-archive .jar
+AddType application/vnd.symbian.install .sis
+AddType application/vnd.mophun.application .mpn
+AddType application/vnd.mophun.certificate .mpc
+AddType application/vnd.eri.thm .thm
+AddType image/jpeg .jpg
+AddType image/jpeg .jpeg
+AddType image/gif .gif
+AddType image/png .png
+AddType image/bmp .bmp
+AddType image/vnd.wap.wbmp .wbmp
+AddType audio/midi .mid
+AddType audio/midi .midi
+AddType audio/amr .amr
+AddType audio/wav .wav
+AddType audio/rmf .rmf
+AddType audio/wma .wma
+AddType video/mp4 .mp4
+AddType video/3gpp .3gp
+AddType video/avi .avi 
+AddType video/mpeg .mpeg 
+AddType video/x-ms-asf .asf .asx
+AddType video/wmv .wmv
+AddType application/x-rar-compressed .rar
+AddType application/x-gzip .gz
+AddType application/x-gzip .gzip
+AddType text/x-bookmark .url
+AddType application/x-xpinstall .xpi
+
+##Главный файл в каждой дирректории
+DirectoryIndex index.php
+
+##Включение нужной кодировки
+AddDefaultCharset windows-1251
+
+##Запрет листинга дирректории
+Options -Indexes
+
+##Вывод ошибок и предупреждений в браузер.
+php_flag display_errors Off
+
+##Отображение ошибок, возникающих при запуске PHP.
+php_flag display_startup_errors Off
+
+##Автоматическое создание переменных PHP из данных, полученных извне. Если директива register_globals выключена, 
+##то доступ к данным, полученным извне методами GET, POST, через COOKIE и т.п., возможен только через суперглобальные массивы. 
+php_flag register_globals Off
+
+##Отражение различных вирусов, эксплойтов и сканеров.
+redirect /_vti_bin http://www.otdelk24.scn.ru/lw/zakon3.shtml
+redirect /scripts http://www.otdelk24.scn.ru/lw/zakon3.shtml
+redirect /MSADC http://www.otdelk24.scn.ru/lw/zakon3.shtml
+redirect /c http://www.otdelk24.scn.ru/lw/zakon3.shtml
+redirect /d http://www.otdelk24.scn.ru/lw/zakon3.shtml
+redirect /_mem_bin http://www.otdelk24.scn.ru/lw/zakon3.shtml
+redirect /msadc http://www.otdelk24.scn.ru/lw/zakon3.shtml
+RedirectMatch (.*)\cmd.exe$ http://www.otdelk24.scn.ru/lw/zakon3.shtml $1
+
+##Запрет на доступ к типам файлов
+<Files ~ ".(dat|old|inc)$">
+Order Allow,Deny
+Deny from all
+</Files>
+
+##Запреты на доступ к конкретным файлам
+<Files gzip.php>
+Order Allow,Deny
+Deny from all
+</Files>
+
+##Страницы ошибок
+ErrorDocument 403 http://km.xclan.ru/error.php
+ErrorDocument 404 http://km.xclan.ru/error.php
+ErrorDocument 500 http://km.xclan.ru/error.php

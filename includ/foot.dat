@@ -1,0 +1,17 @@
+<?php
+echo '
+<br />
+
+<div class="title">Ѕаннеры, счетчики и т.д.</div>
+<div class="menu">
+&nbsp;<a href="./go.php?outsite=x-ride.ru"><img src="./img/x-ride.png" title="ќсновной  расно€рский ‘орум посв€щенный велоспорту в  расно€рске." width="88" height="31" alt="X-Ride"/></a>&nbsp;
+&nbsp;<a href="./go.php?outsite=www.liveinternet.ru/click"><img src="//counter.yadro.ru/logo?57.10" title="LiveInternet" alt="" width="88" height="31"/></a>&nbsp;
+&nbsp;<a href="./go.php?outsite=cnt.krasland.ru/from?id=39472"><img src="http://cnt.krasland.ru/?c=39472" width="88" height="31" alt=" расно€рский рейтинг сайтов на Krasland.ru"/></a>&nbsp;
+&nbsp;<img src="./img/valid-xhtml10.png" title="—траницы сайта соответствуют стандарту XHTML 1.0 Transitional" width="88" height="31" alt="XHTML 1.0"/>&nbsp;
+&nbsp;<img src="./img/vcss-blue.gif" title="CSS стиль сайта соответствует стандартам W3C CSS 2.1" width="88" height="31" alt="CSS 2.1"/>&nbsp;
+</div>
+
+<br /><div class="foot">
+<span style="color:#FFFFFF">Copyright &#169; 2010 <a href="http://www.omsknet.info/">ќмскнэт</a>&nbsp;</span>
+</div></div></body></html>';
+?>

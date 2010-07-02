@@ -1,0 +1,76 @@
+body {
+    max-width: 700px; 
+    margin: 1px auto; 
+    font-family:Tahoma; 
+    font-size:13px; 
+    background-color: white;
+}
+font,th,div,p {
+    font-family: sans-serif; 
+    color: #494949; 
+    font-size: 11px;
+}
+a:link, a:active, a:visited {
+    color: #666668; 
+    text-decoration: none;
+}
+a:hover {
+    color: #FFFFFF; 
+    text-decoration: none;
+}
+.dance {
+    background-image:url('/img/background.gif');
+}
+.title {
+    border: 1px solid #3B6798;
+    padding: 3px;     
+    display: inline; 
+    margin: 0; 
+    margin-left: 3px;
+    background-color: #6D8FB3; 
+    color: #FFFFFF;
+}
+.menu {
+    border: 1px solid #3B6798; 
+    padding: 3px; 
+    margin: 3px 3px 0 3px;
+    background-color: #F8F8F8;
+}
+a.m:link, a.l:active, a.l:visited 
+{
+    padding: 0; 
+    text-decoration: none;
+}
+a.m:hover {
+    background:#336699; 
+    color: white; 
+    text-decoration: none;
+}
+a.l:link, a.l:active, a.l:visited {
+    display: block; 
+    padding: 0; 
+    text-decoration: none;
+}
+a.l:hover {
+    background: #336699; 
+    color: white; 
+    text-decoration: none;
+}
+.a1 {
+    border: 1px dotted white; 
+    padding-bottom: 4px;
+}
+.a1:hover {
+    color: #FFFFFF; 
+    text-decoration: none; 
+    border: 1px solid #FFFFFF; 
+    background-color: #336699;
+}
+.foot {
+    border-top: 3px double white; 
+    padding: 3px; 
+    background:#6D8FB3;
+}
+img{
+    border:0
+}
