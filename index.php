@@ -2,9 +2,10 @@
 include ('./include/header.dat');
 include ('./include/menu.dat');
 GetMenu();
-?>    
+?>   
     
-    <div id="content">    
+    <div id="content">
+        <div style="padding-top:3px; margin:3px;"><a href="http://vkontakte.ru/club1204396" class="goback" title="КМ вконтакте">Группа вконтакте ►</a></div>
         
         <div class="blockdata">
             <div class="titlecontainer">
@@ -12,7 +13,7 @@ GetMenu();
             </div>
             <div class="data">
                 Сайт для любителей велопокатушек!<br />
-                <br />
+                <br />                
                 <strong>«<span style="color: red">Мы не блокируем дорожное движение - мы являемся частью движения!</span>»</strong> - таков лозунг «Критической массы»                
             </div>
         </div>

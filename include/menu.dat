@@ -2,10 +2,15 @@
 function getMenu($cur_url){
     if($cur_url == null)
         $cur_url = $_SERVER['REQUEST_URI'];
+        /*
+        * cur_url должны сравниваца с адроесом без точки 
+        * то есть ./ не верно, а / верно 
+        */
 ?>
     <div id="menu">        
         <ul class="menu">
             <li><a <?php if($cur_url == "/" || !$cur_url){ echo 'class="select"';} ?> href="./">Главная</a></li>
+            <li><a <?php if($cur_url == "/more.php"){ echo 'class="select"';} ?> href="./more.php">Подробности</a></li>
             <li><a <?php if($cur_url == "/km.php"){ echo 'class="select"';} ?> href="./km.php">Покатушки</a></li>
             <li><a <?php if($cur_url == "/roads.php"){ echo 'class="select"';} ?> href="./roads.php">Маршруты</a></li>
             <li><a <?php if($cur_url == "/video.php"){ echo 'class="select"';} ?> href="./video.php">Видеоотечты</a></li>
