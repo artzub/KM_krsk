@@ -4,8 +4,6 @@ include ('./include/menu.dat');
 GetMenu();
 ?>
 <div id="content">
-    <div style="padding-top:3px; margin:3px;"><a href="http://vkontakte.ru/club1204396" class="goback" title="КМ вконтакте">Группа вконтакте ►</a></div>
-    
     <div class="blockdata">
         <div class="titlecontainer">
             <div class="title">Подробности проведения акций</div>

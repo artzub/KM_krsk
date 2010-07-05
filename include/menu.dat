@@ -10,11 +10,12 @@ function getMenu($cur_url){
     <div id="menu">        
         <ul class="menu">
             <li><a <?php if($cur_url == "/" || !$cur_url){ echo 'class="select"';} ?> href="./">Главная</a></li>
+            <li><a <?php if($cur_url == "/km.php"){ echo 'class="select"';} ?> href="./km.php">Планы</a></li>
             <li><a <?php if($cur_url == "/more.php"){ echo 'class="select"';} ?> href="./more.php">Подробности</a></li>
-            <li><a <?php if($cur_url == "/km.php"){ echo 'class="select"';} ?> href="./km.php">Покатушки</a></li>
             <li><a <?php if($cur_url == "/roads.php"){ echo 'class="select"';} ?> href="./roads.php">Маршруты</a></li>
-            <li><a <?php if($cur_url == "/video.php"){ echo 'class="select"';} ?> href="./video.php">Видеоотечты</a></li>
-            <li><a <?php if($cur_url == "/pravila.php"){ echo 'class="select"';} ?> href="./pravila.php">Правила (ПДД)</a></li>            
+            <li><a <?php if($cur_url == "/pravila.php"){ echo 'class="select"';} ?> href="./pravila.php">Правила (ПДД)</a></li>
+            <li><a <?php if($cur_url == "/photos.php"){ echo 'class="select"';} ?> href="./photos.php">Фото</a></li>
+            <li><a <?php if($cur_url == "/video.php"){ echo 'class="select"';} ?> href="./video.php">Видео</a></li>
             <li><a <?php if($cur_url == "/contact.php"){ echo 'class="select"';} ?> href="./contact.php">Контакты</a></li>
         </ul>
     </div>

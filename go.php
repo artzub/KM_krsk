@@ -14,7 +14,7 @@ if($_GET['outsite']==""){$_GET['outsite']=$_SERVER['HTTP_HOST'];}
                 Вы собираетесь покинуть сайт <b><?php echo $_SERVER['HTTP_HOST']?></b> и перейти по адресу <b>http://<?php echo $_GET["outsite"]?></b>.
                 <br />
                 <br /><b>Вы подтверждаете переход по внешней ссылке?</b>
-                <br /><a class="m" href="http://<?php echo $_GET["outsite"] ?>">Да, перейти по указанному адресу</a>                
+                <br /><a class="m" target="_blank" href="http://<?php echo $_GET["outsite"] ?>">Да, перейти по указанному адресу</a>                
             </div>            
         </div>
         <a class="goback" href="<?php echo $_SERVER['HTTP_REFERER']?>">◀ Вернуться назад</a>

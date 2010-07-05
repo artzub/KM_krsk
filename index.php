@@ -5,16 +5,18 @@ GetMenu();
 ?>   
     
     <div id="content">
-        <div style="padding-top:3px; margin:3px;"><a href="http://vkontakte.ru/club1204396" class="goback" title="КМ вконтакте">Группа вконтакте ►</a></div>
+        <div style="padding-top:3px; margin:3px;"><a href="./go.php?outsite=vkontakte.ru/club1204396" class="goback" title="КМ вконтакте">Критическая Масса вКонтакте ►</a></div>
         
         <div class="blockdata">
             <div class="titlecontainer">
-                <div class="title">Критическая масса (Красноярск)</div>
+                <div class="title">Критическая Масса (Красноярск)</div>
             </div>
             <div class="data">
-                Сайт для любителей велопокатушек!<br />
-                <br />                
-                <strong>«<span style="color: red">Мы не блокируем дорожное движение - мы являемся частью движения!</span>»</strong> - таков лозунг «Критической массы»                
+<center><img src="./img/kritical_mass.jpg" title="Критическая Масса в Красноярске. Старт в 20:00 от памятника Резанову на БКЗ." alt="Критическая Масса в Красноярске"/></center>
+                <br />             
+                <center><strong>«<span style="color: red">Мы не блокируем дорожное движение - мы являемся частью движения!</span>»</strong></center><br />
+                <center>таков лозунг «Критической массы»</center><br />               
+            <br />
             </div>
         </div>
         
