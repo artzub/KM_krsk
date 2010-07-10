@@ -1,4 +1,6 @@
 <?php
+header("Location: http://km.xclan.ru");
+/*
 include ('./include/header.dat');
 include ('./include/menu.dat');
 GetMenu();
@@ -17,5 +19,5 @@ GetMenu();
         </div>        
         <a class="goback" href="./" title="Назад">◀ Перейти на главную</a>
 <?php
-include ('./include/footer.dat');
+include ('./include/footer.dat');*/
 ?>
