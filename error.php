@@ -1,5 +1,6 @@
 <?php
 header("Location: http://km.xclan.ru");
+
 /*
 include ('./include/header.dat');
 include ('./include/menu.dat');
