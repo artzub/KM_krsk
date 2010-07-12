@@ -3,6 +3,9 @@ header("Location: http://km.xclan.ru");
 
 /*
 опаньки
+
+here comes trouble
+
 include ('./include/header.dat');
 include ('./include/menu.dat');
 GetMenu();
