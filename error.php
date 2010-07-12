@@ -2,6 +2,7 @@
 header("Location: http://km.xclan.ru");
 
 /*
+тест!!!!
 include ('./include/header.dat');
 include ('./include/menu.dat');
 GetMenu();
